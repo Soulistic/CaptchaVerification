@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sudoku.js"></script>
+</head>
+<body>
+
+    <div id="captcha-container">
+        <label for="human-checkbox">Are you a human?</label>
+        <input type="checkbox" id="human-checkbox">
+        <button id="verify-button" onclick="showSudoku()">Verify</button>
+    </div>
+
+    <div id="sudoku-container">
+        <h2>Complete the Sudoku</h2>
+        <div id="sudoku" class="sudoku"></div>
+        <button id="submit-button" onclick="verifyCaptcha()">Submit</button>
+    </div>
+
+</body>
+</html>

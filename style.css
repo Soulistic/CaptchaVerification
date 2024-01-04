@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#captcha-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sudoku-container {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sudoku {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.sudoku-cell:hover {
+    background-color: #f0f0f0;
+}
+
+#verify-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#verify-button:hover {
+    background-color: #45a049;
+}
+
+#sudoku-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#submit-button {
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #2980b9;
+}
